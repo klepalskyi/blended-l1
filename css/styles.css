@@ -449,6 +449,7 @@ button {
 
 /* PRICE */
 .price {
+  padding-bottom: 100px;
 }
 
 .price-container {
@@ -492,6 +493,11 @@ button {
   font-family: "Montserrat", sans-serif;
   gap: 7px;
 }
+
+.price-list-colored {
+  background-color: #02897a;
+  color: #fff;
+}
 .price-amount {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -504,6 +510,11 @@ button {
   position: relative;
   display: inline-block;
 }
+
+.amount-colored {
+  color: #fff;
+}
+
 .price-amount::after {
   content: "$";
   position: absolute;
@@ -517,6 +528,20 @@ button {
   letter-spacing: 0em;
   color: #02897a;
 }
+.amount-colored::after {
+  content: "$";
+  position: absolute;
+  top: 24px;
+  margin-left: 10px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
 .price-dollar {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -534,6 +559,11 @@ button {
   margin-bottom: 30px;
 }
 .price-card-list-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.01em;
 }
 
 .price-button {
@@ -549,4 +579,84 @@ button {
   background-color: #02897a;
   border: none;
 }
+.price-button-colored {
+  display: block;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #02897a;
+  border-radius: 8px;
+  width: 139px;
+  height: 44px;
+  background-color: #fff;
+  border: none;
+}
 /* END_PRICE */
+
+/* FEEDBACK */
+.feedback {
+}
+
+.feedback-container {
+}
+.feedback-title {
+  text-align: center;
+  line-height: 1.78;
+  padding-bottom: 10px;
+}
+.feedback-text {
+  text-align: center;
+  max-width: 537px;
+  margin: 0 auto 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+.feedback-list {
+  display: flex;
+  gap: 64px;
+}
+.feedback-list-item {
+  width: calc((100% - 64px * 2) / 3);
+  padding-top: 26px;
+  padding-left: 26px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+.feedback-icon-stars {
+}
+.feedback-list-text {
+  width: 275px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #737373;
+  padding-bottom: 16px;
+}
+
+.feedback-list-cart-container {
+  display: flex;
+}
+.feedback-list-cart-container-text {
+}
+.feedback-list-icon {
+  margin-right: 14px;
+}
+.fedback-list-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+.feedback-list-post {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+/* END_FEEDBACK */
